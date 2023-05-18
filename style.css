@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/*Navbar*/
+
+.content p {
+  font-weight: 300;
+  color: black;
+}
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo-nav a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list {
+  display: inline-flex;
+}
+.menu-list li {
+  list-style: none;
+}
+.menu-list li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover {
+  color: #e0bebe;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg1.jpg);
+  background-size: cover;
+}
+
+.banner .content-text {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content-text h2 {
+  font-size: 5em;
+  color: white;
+  font-family: "Great Vibes", cursive;
+}
+
+.banner .content-text p {
+  font-size: 1em;
+  color: white;
+}
+
+.about-text {
+  padding: 30px 0;
+}
+.about-text .title {
+  font-size: 38px;
+  font-weight: 700;
+}
+.about-text p {
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon-nav {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* About */
+.about {
+  background: url(bg2.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
+}
+.inner-section {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 140px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+}
+.inner-section h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Great Vibes", cursive;
+}
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+/* video*/
+.video h2 {
+  font-family: "Great Vibes", cursive;
+}
+
+.video p {
+  width: 500px;
+}
+
+/* gallery*/
+.gallery {
+  margin-top: 80px;
+}
+
+.gallery h2 {
+  font-family: "Great Vibes", cursive;
+}
+
+/* contact*/
+.contact {
+  margin-left: 10%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.social a {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #161515;
+}
+
+#contact {
+  margin-top: 30px;
+  padding: 50px;
+  background: rgb(243, 247, 247);
+  height: 770px;
+  width: 100%;
+}
+
+#contact h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.social a:hover {
+  color: #000000;
+  transition: all ease 0.3s;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box {
+  background-color: #140f0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.c-heading h1 {
+  font-family: Roboto;
+  color: rgb(236, 236, 236);
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+
+.c-heading p {
+  font-family: Roboto;
+  color: rgb(236, 236, 236);
+  font-size: 0.8rem;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.c-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.c-inputs input {
+  width: 250px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(248, 248, 248);
+  outline: none;
+  margin: 10px 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #f4f4f4;
+  display: flex;
+}
+
+.c-inputs textarea {
+  width: 250px !important;
+  height: 200px !important;
+  outline: none;
+  background-color: rgba(43, 41, 41, 0.281);
+  border: 1px solid rgb(248, 248, 248);
+  color: #f4f4f4;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+.c-inputs button {
+  width: 200px;
+  height: 40px;
+  background-color: #5dceac;
+  color: white;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.c-inputs input:focus {
+  border-bottom: 1px rgba(255, 255, 255, 0.781);
+  transition: all ease 0.5s;
+}
+
+.c-inputs textarea:focus {
+  border: none;
+  border-bottom: 1px rgba(255, 255, 255, 0.781);
+  transition: all ease 0.5s;
+}
+
+.c-inputs button:hover {
+  transition: 1s;
+  background-color: #315e50;
+  color: rgb(249, 255, 244);
+}
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.book button {
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  width: 200px;
+  background-color: #5dceac;
+  color: white;
+  cursor: pointer;
+}
+.book button:hover {
+  transition: 1s;
+  background-color: #315e50;
+  color: rgb(249, 255, 244);
+}
